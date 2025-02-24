@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="All">
+  <div class="tracker">
+    <div class="expense-tracker">
+      <h2>Simple Expense Tracker</h2>
+    </div>
+   
+    <div class="display">
+      <div>
+        <strong>Total Deposit:</strong>
+        <span>$</span>
+        <span id="total-deposit">
+          
+          0</span>
+      </div>
+     
+    </div>
+    
+    <div class="display">
+      <div>
+        <strong>Total Withdraw:</strong>
+        <span>$</span>
+
+        <span id="total-withdraw">0</span>
+      </div>
+    </div>
+    <div class="display">
+      <div>
+        <strong>Total Balance:</strong>
+        <span>$</span>
+
+        <span id="total-balance">0</span>
+      </div>
+    </div>
+    <div class="input-group">
+      <input type="number" id="amount" placeholder="Enter Amount" min="0">
+    </div>
+    <div class="btn-group">
+      <button class="deposit" id="deposit-btn">Deposit</button>
+      <button class="withdraw" id="withdraw-btn">Withdraw</button>
+    </div>
+    <button class="submit-assignment" id="submit-assignment-btn">Submit Assignment</button>
+  </div>
+
+<!-- Modal for assignment submission -->
+<div id="assignment-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="close-modal">&times;</span>
+    <h3>Submit Your Assignment</h3>
+    <div class="modal-info">
+      <input type="text" id="repo-link" placeholder="Repository Link">
+    <input type="text" id="live-link" placeholder="Live Website Link">
+    <div class="link-button">
+      <button id="submit-assignment-modal-btn">Submit</button>
+    </div>
+    </div>
+   
+  </div>
+</div>
+
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
