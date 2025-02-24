@@ -3,7 +3,7 @@ let totalDeposit = 0;
 let totalWithdraw = 0;
 let totalBalance = 0;
 
-// Elements
+// Elements -- 
 const depositBtn = document.getElementById('deposit-btn');
 const withdrawBtn = document.getElementById('withdraw-btn');
 const amountInput = document.getElementById('amount');
@@ -72,7 +72,7 @@ submitAssignmentModalBtn.addEventListener('click', () => {
     alert("Please provide both links");
     return;
   }
-  
+
   alert("Assignment Submitted Successfully!");
   repoLinkInput.value = "";
   liveLinkInput.value = "";
